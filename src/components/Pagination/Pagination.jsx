@@ -12,7 +12,7 @@ const Pagination = ({ currentPage, totalPages, onPageChange, setPageSize}) => {
     setPageSize(updatedPageSize) // Ajusta el tamaño de la página cuando estás en la primera página
     if (newPage >= 1 && newPage <= totalPages) {
 
-      history.push(`/videogames?page=${newPage}&pageSize=${updatedPageSize}`);
+      history.push(`/games?page=${newPage}&pageSize=${updatedPageSize}`);
       onPageChange(newPage)
     }
    
