@@ -84,7 +84,8 @@ const Create = () => {
     } else {
       try {
         // Hacer la llamada a axios y asignar el resultado a 'response'
-        const response = await axios.post('http://localhost:4000/games', {
+        // const response = await axios.post('http://localhost:4000/games', { predeploy
+          const response = await axios.post('https://serverpi.onrender.com/games', {
           name: games.name,
           releaseDate: games.releaseDate,
           rating: games.rating,
